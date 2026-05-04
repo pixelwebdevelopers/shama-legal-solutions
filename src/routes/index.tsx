@@ -53,13 +53,13 @@ function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-navy-deep">
         <video
           autoPlay muted loop playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-50"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
           poster={gavel}
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 gradient-hero" />
-        <div className="absolute inset-0 [background-image:radial-gradient(ellipse_at_center,_transparent_0%,_oklch(0.15_0.04_260/0.7)_80%)]" />
+        <div className="absolute inset-0 gradient-hero opacity-80" />
+        <div className="absolute inset-0 [background-image:radial-gradient(ellipse_at_center,_transparent_0%,_oklch(0.15_0.04_260/0.6)_80%)]" />
 
         <ScalesIcon className="absolute top-1/2 -translate-y-1/2 right-4 lg:right-20 h-64 lg:h-96 text-gold/20 animate-scale-tilt hidden md:block" />
 

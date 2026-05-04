@@ -4,6 +4,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFab } from "@/components/WhatsAppFab";
+import { LanguageToggle } from "@/components/LanguageToggle";
 
 function NotFoundComponent() {
   return (
@@ -80,6 +81,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
   );
 }
 
+
 function RootComponent() {
   return (
     <LanguageProvider>
@@ -88,6 +90,9 @@ function RootComponent() {
         <Outlet />
       </main>
       <Footer />
+      <div className="fixed bottom-[104px] right-6 z-50">
+        <LanguageToggle className="bg-ivory/95 backdrop-blur-md shadow-elegant !px-4 !py-3 border-gold/50 text-navy-deep hover:bg-gold hover:text-navy-deep hover:scale-110 transition-all duration-300 rounded-2xl" />
+      </div>
       <WhatsAppFab />
     </LanguageProvider>
   );

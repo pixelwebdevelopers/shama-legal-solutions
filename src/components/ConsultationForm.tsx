@@ -27,19 +27,19 @@ export function ConsultationForm({ defaultCase = "" }: { defaultCase?: string })
       <div className="grid sm:grid-cols-2 gap-4">
         <input required value={name} onChange={(e) => setName(e.target.value)} maxLength={100}
           placeholder={t.contact.name}
-          className="w-full rounded-lg border border-input bg-background px-4 py-3 focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/30" />
+          className="w-full rounded-lg border border-input bg-background px-4 py-3 text-navy-deep focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/30" />
         <input required value={phone} onChange={(e) => setPhone(e.target.value)} maxLength={20} type="tel"
           placeholder={t.contact.phone}
-          className="w-full rounded-lg border border-input bg-background px-4 py-3 focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/30" />
+          className="w-full rounded-lg border border-input bg-background px-4 py-3 text-navy-deep focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/30" />
       </div>
       <select required value={caseType} onChange={(e) => setCaseType(e.target.value)}
-        className="w-full rounded-lg border border-input bg-background px-4 py-3 focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/30">
+        className="w-full rounded-lg border border-input bg-background px-4 py-3 text-navy-deep focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/30">
         <option value="">{t.contact.selectCase}</option>
         {services.map((s) => <option key={s} value={s}>{s}</option>)}
       </select>
       <textarea required value={message} onChange={(e) => setMessage(e.target.value)} maxLength={1000} rows={4}
         placeholder={t.contact.message}
-        className="w-full rounded-lg border border-input bg-background px-4 py-3 focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/30" />
+        className="w-full rounded-lg border border-input bg-background px-4 py-3 text-navy-deep focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/30" />
       <button type="submit"
         className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp text-white px-6 py-3.5 font-semibold hover:opacity-90 transition shadow-elegant">
         <Send className="h-4 w-4" /> {t.cta.submit}

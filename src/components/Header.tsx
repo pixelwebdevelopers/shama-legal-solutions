@@ -3,7 +3,6 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { useLang } from "@/contexts/LanguageContext";
-import { LanguageToggle } from "./LanguageToggle";
 import { ScalesIcon } from "./ScalesIcon";
 import { WHATSAPP_DISPLAY, waLink } from "@/lib/translations";
 
@@ -33,9 +32,6 @@ export function Header() {
     { to: "/services", label: t.nav.services },
     { to: "/pricing", label: t.nav.pricing },
     { to: "/reviews", label: t.nav.reviews },
-    { to: "/locations", label: t.nav.locations },
-    { to: "/jobs", label: t.nav.jobs },
-    { to: "/register", label: t.nav.register },
     { to: "/contact", label: t.nav.contact },
   ] as const;
 
@@ -52,10 +48,6 @@ export function Header() {
           <div className="flex h-16 lg:h-20 items-center justify-between">
             <Link to="/" className="flex items-center gap-2 group">
               <img src={logo} alt="Shama Legal Solutions logo" className="h-10 lg:h-12 w-auto rounded bg-ivory/95 p-1" />
-              <span className="hidden sm:flex flex-col leading-tight">
-                <span className="font-display text-ivory text-base lg:text-lg font-bold tracking-wide">SHAMA</span>
-                <span className="text-gold text-[10px] lg:text-xs tracking-[0.2em] uppercase">Legal Solutions</span>
-              </span>
             </Link>
 
             <nav className="hidden xl:flex items-center gap-1">
@@ -77,7 +69,6 @@ export function Header() {
             </nav>
 
             <div className="flex items-center gap-2 lg:gap-3">
-              <LanguageToggle className="text-ivory" />
               <a
                 href={waLink(t.misc.whatsappPrompt)}
                 target="_blank" rel="noopener noreferrer"
@@ -114,10 +105,6 @@ export function Header() {
           <div className="flex items-center justify-between px-6 py-5 border-b border-gold/30 bg-navy-deep">
             <div className="flex items-center gap-3">
               <ScalesIcon className="h-9 w-9 text-gold animate-scale-tilt" />
-              <div className="leading-tight">
-                <div className="font-display text-ivory font-bold">SHAMA</div>
-                <div className="text-gold text-[10px] tracking-[0.2em] uppercase">Legal Solutions</div>
-              </div>
             </div>
             <button
               onClick={() => setOpen(false)}
@@ -160,7 +147,6 @@ export function Header() {
             </a>
             <div className="flex items-center justify-between">
               <span className="text-ivory/70 text-xs">{WHATSAPP_DISPLAY}</span>
-              <LanguageToggle className="text-ivory" />
             </div>
           </div>
         </aside>
