@@ -205,3 +205,7 @@
 
 [dir="rtl"] .reveal-left.in-view { animation-name: slide-in-right; }
 [dir="rtl"] .reveal-right.in-view { animation-name: slide-in-left; }
+
+.menu-open .floating-control {
+  display: none !important;
+}

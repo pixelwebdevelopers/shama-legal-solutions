@@ -90,7 +90,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <Footer />
-      <div className="fixed bottom-[104px] right-6 z-50">
+      <div className="fixed bottom-[104px] right-6 z-50 floating-control">
         <LanguageToggle className="bg-ivory/95 backdrop-blur-md shadow-elegant !px-4 !py-3 border-gold/50 text-navy-deep hover:bg-gold hover:text-navy-deep hover:scale-110 transition-all duration-300 rounded-2xl" />
       </div>
       <WhatsAppFab />

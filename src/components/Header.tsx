@@ -23,7 +23,11 @@ export function Header() {
   useEffect(() => { setOpen(false); }, [path]);
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    document.body.classList.toggle("menu-open", open);
+    return () => {
+      document.body.style.overflow = "";
+      document.body.classList.remove("menu-open");
+    };
   }, [open]);
 
   const links = [
