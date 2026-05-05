@@ -4,7 +4,7 @@ import { PageHero, Section, SectionTitle } from "@/components/Section";
 import { ConsultationForm } from "@/components/ConsultationForm";
 import { useReveal } from "@/hooks/use-reveal";
 import {
-  Scale, Gavel, Heart, Building2, Briefcase, FileText, Building, Baby, ShieldCheck, CheckCircle2,
+  Scale, Gavel, Heart, Building2, Briefcase, FileText, Building, Baby, ShieldCheck, CheckCircle2, MessageCircle,
 } from "lucide-react";
 import gavel from "@/assets/gavel.jpg";
 
@@ -32,6 +32,7 @@ function ServicesPage() {
     { icon: Building, ...t.services.company, points: ["SECP incorporation", "Partnerships", "Compliance", "Trademarks"] },
     { icon: Baby, ...t.services.custody, points: ["Guardianship", "Visitation rights", "Hizanat", "Welfare petitions"] },
     { icon: ShieldCheck, ...t.services.bail, points: ["Pre-arrest bail", "Post-arrest bail", "Bail before arrest", "High Court bail"] },
+    { icon: MessageCircle, ...t.services.others, points: ["Custom legal advice", "Notarization", "Registry search", "Legal drafting"] },
   ];
 
   return (

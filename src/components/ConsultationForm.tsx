@@ -14,6 +14,7 @@ export function ConsultationForm({ defaultCase = "" }: { defaultCase?: string })
     t.services.civil.name, t.services.criminal.name, t.services.family.name,
     t.services.banking.name, t.services.labour.name, t.services.ntn.name,
     t.services.company.name, t.services.custody.name, t.services.bail.name,
+    t.services.others.name,
   ];
 
   const onSubmit = (e: FormEvent) => {

@@ -52,7 +52,7 @@ export const Route = createRootRoute({
           "@type": "LegalService",
           name: "Shama Legal Solutions",
           description: "Female-led legal chamber in Pakistan handling Civil, Criminal, Family, Banking, Bail, NTN and Corporate matters.",
-          telephone: "+923163814166",
+          telephone: "+923124100649",
           areaServed: ["Lahore", "Hyderabad", "Punjab", "Sindh", "Pakistan"],
           address: [
             { "@type": "PostalAddress", addressLocality: "Lahore", addressRegion: "Punjab", addressCountry: "PK" },

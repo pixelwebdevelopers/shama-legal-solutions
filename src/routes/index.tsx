@@ -10,7 +10,7 @@ import {
   Scale, Gavel, Heart, Building2, Briefcase, FileText, Building, Baby, ShieldCheck,
   ArrowRight, Clock, Users, BadgePercent, MapPin, Star, CheckCircle2, MessageCircle
 } from "lucide-react";
-import advocate from "@/assets/advocate-portrait.jpg";
+import advocate from "@/assets/advocate-portrait.webp";
 import lahore from "@/assets/lahore-court.jpg";
 import hyderabad from "@/assets/hyderabad-city.jpg";
 import gavel from "@/assets/gavel.jpg";
@@ -41,6 +41,7 @@ function HomePage() {
     { key: "company", icon: Building, ...t.services.company },
     { key: "custody", icon: Baby, ...t.services.custody },
     { key: "bail", icon: ShieldCheck, ...t.services.bail },
+    { key: "others", icon: MessageCircle, ...t.services.others },
   ];
 
   const heroRef = useReveal<HTMLDivElement>();
@@ -312,6 +313,33 @@ function HomePage() {
               </div>
             </div>
           ))}
+        </div>
+      </Section>
+
+      {/* LEGAL AID */}
+      <Section className="bg-secondary relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-navy-deep/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
+        
+        <div className="relative mx-auto max-w-4xl text-center">
+          <div className="h-16 w-16 rounded-full bg-gold/10 flex items-center justify-center text-gold mx-auto mb-6 shadow-elegant">
+            <Heart className="h-8 w-8" />
+          </div>
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-navy-deep mb-4">{t.legalAid.title}</h2>
+          <p className="text-gold tracking-[0.2em] text-xs uppercase mb-6 font-semibold">{t.legalAid.subtitle}</p>
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            {t.legalAid.description}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={waLink(`${t.misc.whatsappPrompt} ${t.legalAid.cta}`)} target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-navy-deep text-ivory px-8 py-4 font-semibold hover:bg-navy transition shadow-elegant">
+              {t.legalAid.cta}
+            </a>
+            <a href={waLink(`${t.misc.whatsappPrompt} ${t.legalAid.donate}`)} target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-navy-deep text-navy-deep px-8 py-4 font-semibold hover:bg-navy-deep hover:text-ivory transition">
+              {t.legalAid.donate}
+            </a>
+          </div>
         </div>
       </Section>
 

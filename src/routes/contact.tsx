@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact Shama Legal Solutions | WhatsApp Lawyer Lahore & Hyderabad" },
-      { name: "description", content: "Reach Advocate Shama Moazzam on WhatsApp +92 316 3814166 — 24/7 legal consultation in Lahore and Hyderabad, Pakistan." },
+      { name: "description", content: "Reach Advocate Shama Moazzam on WhatsApp 0312 4100649 — 24/7 legal consultation in Lahore and Hyderabad, Pakistan." },
       { property: "og:title", content: "Contact Us | Shama Legal Solutions" },
       { property: "og:description", content: "Free WhatsApp consultation, 24/7." },
     ],
@@ -27,7 +27,7 @@ function ContactPage() {
           <div className="lg:col-span-2 space-y-4">
             {[
               { i: MessageCircle, t: "WhatsApp", v: WHATSAPP_DISPLAY, href: waLink(t.misc.whatsappPrompt) },
-              { i: Phone, t: t.cta.callNow, v: WHATSAPP_DISPLAY, href: `tel:+923163814166` },
+              { i: Phone, t: t.cta.callNow, v: WHATSAPP_DISPLAY, href: `tel:+923124100649` },
               { i: Mail, t: "Email", v: "info@shamalegal.pk", href: "mailto:info@shamalegal.pk" },
               { i: MapPin, t: t.locations.lahore, v: t.locations.lahoreAddr, href: "https://maps.google.com/?q=Lahore+High+Court" },
               { i: MapPin, t: t.locations.hyderabad, v: t.locations.hyderabadAddr, href: "https://maps.google.com/?q=Hyderabad+Sindh+Pakistan" },

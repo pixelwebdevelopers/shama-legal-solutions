@@ -54,6 +54,14 @@ export const translations = {
       company: { name: "Company Registration", desc: "SECP incorporation, partnerships and compliance." },
       custody: { name: "Child Custody", desc: "Sensitive guardianship and custody representation." },
       bail: { name: "Bail Cases", desc: "Pre-arrest, post-arrest and bail-after-arrest matters." },
+      others: { name: "Others", desc: "For any other legal matters not listed above." },
+    },
+    legalAid: {
+      title: "Legal Aid & Donation",
+      subtitle: "Justice for All",
+      description: "We provide pro-bono legal services to those who cannot afford professional fees. Your contributions help us continue this mission.",
+      cta: "Apply for Legal Aid",
+      donate: "Support This Cause",
     },
     about: {
       title: "Justice With a Personal Touch",
@@ -210,6 +218,14 @@ export const translations = {
       company: { name: "کمپنی رجسٹریشن", desc: "ایس ای سی پی، پارٹنرشپ اور کمپلائنس۔" },
       custody: { name: "بچوں کی تحویل", desc: "سرپرستی اور حق پرورش کے حساس معاملات۔" },
       bail: { name: "ضمانت کے کیسز", desc: "قبل از گرفتاری، بعد از گرفتاری ضمانت۔" },
+      others: { name: "دیگر", desc: "کسی بھی دوسرے قانونی معاملے کے لیے جو اوپر درج نہیں ہے۔" },
+    },
+    legalAid: {
+      title: "قانونی امداد اور عطیہ",
+      subtitle: "سب کے لیے انصاف",
+      description: "ہم ان لوگوں کو مفت قانونی خدمات فراہم کرتے ہیں جو فیس ادا کرنے کی استطاعت نہیں رکھتے۔ آپ کا تعاون اس مشن کو جاری رکھنے میں ہماری مدد کرتا ہے۔",
+      cta: "قانونی امداد کے لیے درخواست دیں",
+      donate: "اس مقصد میں تعاون کریں",
     },
     about: {
       title: "ذاتی توجہ کے ساتھ انصاف",
@@ -315,8 +331,8 @@ export const translations = {
   },
 } as const;
 
-export const WHATSAPP_NUMBER = "923163814166";
-export const WHATSAPP_DISPLAY = "+92 316 3814166";
+export const WHATSAPP_NUMBER = "923124100649";
+export const WHATSAPP_DISPLAY = "0312 4100649";
 
 export function waLink(message: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
