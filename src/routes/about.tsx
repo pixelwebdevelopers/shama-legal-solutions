@@ -3,7 +3,7 @@ import { useLang } from "@/contexts/LanguageContext";
 import { PageHero, Section } from "@/components/Section";
 import { useReveal } from "@/hooks/use-reveal";
 import { CheckCircle2, Award, Heart, Users } from "lucide-react";
-import advocate from "@/assets/advocate-portrait.webp";
+import advocate from "@/assets/advocate-portrait.jpg";
 import family from "@/assets/family-consult.jpg";
 
 export const Route = createFileRoute("/about")({

@@ -10,7 +10,7 @@ import {
   Scale, Gavel, Heart, Building2, Briefcase, FileText, Building, Baby, ShieldCheck,
   ArrowRight, Clock, Users, BadgePercent, MapPin, Star, CheckCircle2, MessageCircle
 } from "lucide-react";
-import advocate from "@/assets/advocate-portrait.webp";
+import advocate from "@/assets/advocate-portrait.jpg";
 import lahore from "@/assets/lahore-court.jpg";
 import hyderabad from "@/assets/hyderabad-city.jpg";
 import gavel from "@/assets/gavel.jpg";
