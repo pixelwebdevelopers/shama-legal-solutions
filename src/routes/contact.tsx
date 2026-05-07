@@ -28,7 +28,7 @@ function ContactPage() {
             {[
               { i: MessageCircle, t: "WhatsApp", v: WHATSAPP_DISPLAY, href: waLink(t.misc.whatsappPrompt) },
               { i: Phone, t: t.cta.callNow, v: WHATSAPP_DISPLAY, href: `tel:+923124100649` },
-              { i: Mail, t: "Email", v: "info@shamalegal.pk", href: "mailto:info@shamalegal.pk" },
+              { i: Mail, t: "Email", v: "shamalegalsolutions@gmail.com", href: "mailto:shamalegalsolutions@gmail.com" },
               { i: MapPin, t: t.locations.lahore, v: t.locations.lahoreAddr, href: "https://maps.google.com/?q=Lahore+High+Court" },
               { i: MapPin, t: t.locations.hyderabad, v: t.locations.hyderabadAddr, href: "https://maps.google.com/?q=Hyderabad+Sindh+Pakistan" },
             ].map(({ i: I, t: tt, v, href }) => (

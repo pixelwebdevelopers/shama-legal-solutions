@@ -42,7 +42,7 @@ export function Footer() {
               <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" /> <span>{t.locations.lahoreAddr}</span></li>
               <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" /> <span>{t.locations.hyderabadAddr}</span></li>
               <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> <a href={waLink(t.misc.whatsappPrompt)} className="hover:text-gold">{WHATSAPP_DISPLAY}</a></li>
-              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> <a href="mailto:info@shamalegal.pk" className="hover:text-gold">info@shamalegal.pk</a></li>
+              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> <a href="mailto:shamalegalsolutions@gmail.com" className="hover:text-gold">shamalegalsolutions@gmail.com</a></li>
             </ul>
           </div>
         </div>
